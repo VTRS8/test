@@ -1,4 +1,179 @@
-Hello!
-Hello!
-Hello!
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>BisBox - Online Cash Box</title>
+      <meta name="author" content="Sakalosh Viktor" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+$(document).ready(function(){
+$('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 700, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+});
+</script>
+  
+</head>
+<body>
+  <nav class="blue-grey darken-4" role="navigation" id="home">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">
+    <h4 class="logo_white">BIS </h4>
+    <h4 class="logo_red">BOX</h4></a>
+      <ul class="right hide-on-med-and-down" id="menu">
+        <li><a href="#">Home</a></li>
+         <li><a href="#">Contacts</a></li>
+         <li><a class='dropdown-button red darken-4' href='#footer'>Log In</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href='#footer' onclick="focus_login()">Log In</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text text-darken-4">Business Template</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based</h5>
+      </div>
+      <div class="row center">
+        <a href="https://themeforest.net/user/vtors" id="download-button" class="btn-large waves-effect waves-light red darken-4">Get Started</a>
+      </div>
+      <br><br>
+    </div>
+  </div>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider/02.jpg">
+        <div class="caption center-align">
+          <h3>You can start today!</h3>
+          <h5 class="light grey-text text-lighten-3">This is a good opportunity for you.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/01.jpg">
+        <div class="caption left-align">
+          <h3>You can get a full report!</h3>
+          <h5 class="light grey-text text-lighten-3">Different ways to output data.</h5>
+        </div>
+      </li>
+      <li>
+       <img src="img/slider/04.jpg">
+        <div class="caption right-align">
+          <h3>You can relax</h3>
+          <h5 class="light grey-text text-lighten-3">All data is always nearby.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/05.jpg">
+        <div class="caption left-align">
+          <h3>You can appreciate it!</h3>
+          <h5 class="light grey-text text-lighten-3">We work for you.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="fa fa-bolt"></i></h2>
+            <h5 class="center">Fast Start</h5>
+
+            <p class="light">We give you full support. We will install and configure according to your needs. You just need to start working. It's convenient for you!</p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="fa fa-users"></i></h2>
+            <h5 class="center">Multi-User Support</h5>
+            <p class="light">You can make settings for each user. Only the administrator has the right to change or add data. It is very convenient! If you need help, we will always help you.</p>
+          </div>
+        </div>
+</div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="fa fa-cogs"></i></h2>
+            <h5 class="center">Easy to work</h5>
+            <p class="light">Intuitively simple interface. You can modify and add users. You can change and add the required data. You can view the reports. If you need help, we will always help you.</p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4"><i class="fa fa-refresh"></i></h2>
+            <h5 class="center">Updates</h5>
+            <p class="light">We take into account your wishes. We are constantly working to improve our product. For our customers, all updates are free. We work for you!</p>
+          </div>
+        </div>
+      </div>
+            </div>
+    </div>
+    <br><br>
+  </div>
+  <footer class="page-footer red darken-4" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="logo_white_text"> BIS </h5>
+          <h5 class="logo_red_text">BOX</h5>
+          <h4>Contacts</h4>
+          <p class="grey-text text-lighten-4">Tel: +38(066) 000 61 62</p>
+          <p class="grey-text text-lighten-4">E-mail: vtrs@gmail.com</p>
+          <p class="grey-text text-lighten-4"><a class="white-text" href="#!">Facebook</a></p>
+        </div>
+        <div class="col l3 offset-l3 s12">
+<form action="admin/testreg.php" method="post">
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="login" id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Login</label>
+        </div>
+        <div class="input-field col s12">
+          <input name="password" id="icon_telephone" type="password" class="validate">
+          <label for="icon_telephone">Password</label>
+        </div>
+        <div class="col s12">
+        <p>
+        <input name="save" type="checkbox" class="filled-in" id="filled-in-box" value='1'>
+        <label for="filled-in-box" name="save">Remember me</label> 
+        <input name="autovhod" type="checkbox" class="filled-in" id="filled-in-box2" value='1'>
+        <label for="filled-in-box2"> Auto Loginentry</label> 
+        </p>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action">Submit
+  </button>
+</form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+       <a class="red-text text-lighten-3" href="http://vtrs.info">Sakalosh Viktor © 2017</a> 
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>
